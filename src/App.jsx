@@ -1,3 +1,6 @@
+import GuestList from "./components/GuestList";
+import { guests } from "./data";
+
 export default function App() {
-  return <></>;
+  return <GuestList guests={guests} />;
 }
