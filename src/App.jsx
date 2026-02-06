@@ -6,7 +6,10 @@ import GuestDetails from "./components/GuestDetails";
 export default function App() {
   const [selectedGuest, selectGuest] = useState();
 
-  if (selectedGuest) return <GuestDetails selectedGuest={selectedGuest} />;
+  if (selectedGuest)
+    return (
+      <GuestDetails selectedGuest={selectedGuest} selectGuest={selectGuest} />
+    );
 
   return <GuestList guests={guests} selectGuest={selectGuest} />;
 }

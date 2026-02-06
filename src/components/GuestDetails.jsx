@@ -1,4 +1,4 @@
-export default function GuestDetails({ selectedGuest }) {
+export default function GuestDetails({ selectedGuest, selectGuest }) {
   return (
     <>
       <h1>Guest Details</h1>
@@ -9,6 +9,7 @@ export default function GuestDetails({ selectedGuest }) {
         <dt>Bio</dt> <dd>{selectedGuest.bio}</dd>
         <dt>Job</dt> <dd>{selectedGuest.job}</dd>
       </dl>
+      <button onClick={() => selectGuest(null)}>Back</button>
     </>
   );
 }
