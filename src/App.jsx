@@ -1,6 +1,5 @@
 import { useState } from "react";
 import GuestList from "./components/GuestList";
-import { guests } from "./data";
 import GuestDetails from "./components/GuestDetails";
 
 export default function App() {
@@ -11,5 +10,5 @@ export default function App() {
       <GuestDetails selectedGuest={selectedGuest} selectGuest={selectGuest} />
     );
 
-  return <GuestList guests={guests} selectGuest={selectGuest} />;
+  return <GuestList selectGuest={selectGuest} />;
 }
