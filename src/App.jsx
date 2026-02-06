@@ -3,12 +3,15 @@ import GuestList from "./components/GuestList";
 import GuestDetails from "./components/GuestDetails";
 
 export default function App() {
-  const [selectedGuest, selectGuest] = useState();
+  const [selectedGuestId, selectGuestId] = useState();
 
-  if (selectedGuest)
+  if (selectedGuestId)
     return (
-      <GuestDetails selectedGuest={selectedGuest} selectGuest={selectGuest} />
+      <GuestDetails
+        selectedGuestId={selectedGuestId}
+        selectGuestId={selectGuestId}
+      />
     );
 
-  return <GuestList selectGuest={selectGuest} />;
+  return <GuestList selectGuestId={selectGuestId} />;
 }

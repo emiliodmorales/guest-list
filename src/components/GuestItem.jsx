@@ -1,6 +1,6 @@
-export default function GuestItem({ guest, selectGuest }) {
+export default function GuestItem({ guest, selectGuestId }) {
   return (
-    <li onClick={() => selectGuest(guest)}>
+    <li onClick={() => selectGuestId(guest.id)}>
       <dl>
         <dt>Name</dt> <dd>{guest.name}</dd>
         <dt>Email</dt> <dd>{guest.email}</dd>

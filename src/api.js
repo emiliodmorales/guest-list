@@ -10,3 +10,13 @@ export async function fetchGuests() {
     console.error(e);
   }
 }
+
+export async function fetchGuestDetails(id) {
+  try {
+    const response = await fetch(API + "/" + id);
+    const responseBody = await response.json();
+    return responseBody.data;
+  } catch (e) {
+    console.error(e);
+  }
+}
