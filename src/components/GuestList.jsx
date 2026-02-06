@@ -7,6 +7,7 @@ export default function GuestList({ guests, selectGuest }) {
           <GuestItem guest={guest} selectGuest={selectGuest} />
         ))}
       </ul>
+      <p>Select a guest to see details</p>
     </>
   );
 }
