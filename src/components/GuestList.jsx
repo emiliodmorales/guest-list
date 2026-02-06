@@ -8,7 +8,7 @@ export default function GuestList({ selectGuestId }) {
   (useEffect(() => {
     fetchGuests().then((result) => setGuests(result));
   }),
-    [guests]);
+    []);
 
   return (
     <>

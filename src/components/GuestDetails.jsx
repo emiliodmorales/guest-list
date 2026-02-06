@@ -7,7 +7,7 @@ export default function GuestDetails({ selectedGuestId, selectGuestId }) {
   (useEffect(() => {
     fetchGuestDetails(selectedGuestId).then((result) => setGuest(result));
   }),
-    [guest]);
+    []);
 
   return (
     <>
