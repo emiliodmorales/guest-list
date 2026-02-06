@@ -8,6 +8,7 @@ export async function fetchGuests() {
     return responseBody.data;
   } catch (e) {
     console.error(e);
+    return [];
   }
 }
 
@@ -18,5 +19,6 @@ export async function fetchGuestDetails(id) {
     return responseBody.data;
   } catch (e) {
     console.error(e);
+    return [];
   }
 }
