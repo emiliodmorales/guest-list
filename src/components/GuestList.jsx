@@ -1,3 +1,5 @@
+import GuestItem from "./GuestItem";
+
 export default function GuestList({ guests, selectGuest }) {
   return (
     <>
@@ -9,13 +11,5 @@ export default function GuestList({ guests, selectGuest }) {
       </ul>
       <p>Select a guest to see details</p>
     </>
-  );
-}
-
-function GuestItem({ guest, selectGuest }) {
-  return (
-    <li key={guest.id} onClick={() => selectGuest(guest)}>
-      {guest.name} {guest.email}
-    </li>
   );
 }
